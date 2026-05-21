@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #faf8ef;
+    color: #333;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    width: 420px;
+    background: #eee4da;
+    padding: 28px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    margin: 0 0 12px;
+    font-size: 42px;
+    color: #776e65;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    color: #776e65;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background: #8f7a66;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #776557;
+}
+
+.secondary-btn {
+    background: #bbada0;
+}
+
+.secondary-btn:hover {
+    background: #a39489;
+}
+
+.message {
+    min-height: 22px;
+    color: #776e65;
+    font-weight: bold;
+}
+
+.menu-card button {
+    font-size: 17px;
+}
+
+.game-card {
+    width: 460px;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.game-header h1 {
+    margin-bottom: 4px;
+}
+
+.game-header p {
+    margin: 0;
+    color: #776e65;
+}
+
+.score-box {
+    background: #bbada0;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.score-box span {
+    display: block;
+    font-size: 13px;
+}
+
+.score-box strong {
+    display: block;
+    font-size: 24px;
+}
+
+.board {
+    width: 360px;
+    height: 360px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    background: #bbada0;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.cell {
+    background: #cdc1b4;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #776e65;
+}
+
+.cell-2 {
+    background: #eee4da;
+}
+
+.cell-4 {
+    background: #ede0c8;
+}
+
+.cell-8 {
+    background: #f2b179;
+    color: white;
+}
+
+.cell-16 {
+    background: #f59563;
+    color: white;
+}
+
+.cell-32 {
+    background: #f67c5f;
+    color: white;
+}
+
+.cell-64 {
+    background: #f65e3b;
+    color: white;
+}
+
+.cell-128 {
+    background: #edcf72;
+    color: white;
+    font-size: 26px;
+}
+
+.cell-256 {
+    background: #edcc61;
+    color: white;
+    font-size: 26px;
+}
+
+.cell-512 {
+    background: #edc850;
+    color: white;
+    font-size: 26px;
+}
+
+.cell-1024 {
+    background: #edc53f;
+    color: white;
+    font-size: 22px;
+}
+
+.cell-2048 {
+    background: #edc22e;
+    color: white;
+    font-size: 22px;
+}
+
+.game-buttons {
+    margin-top: 12px;
+}
+
+.leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.leaderboard-list li {
+    background: #faf8ef;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-info {
+    background: #faf8ef;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.profile-info p {
+    font-size: 18px;
+}
