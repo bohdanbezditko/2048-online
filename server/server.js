@@ -61,6 +61,10 @@ app.use(authRoutes);
 app.use(gameRoutes);
 app.use(leaderboardRoutes);
 
-app.listen(PORT, () => {
-    console.log(`Сервер запущено: http://localhost:${PORT}`);
-});
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Сервер запущено: http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;

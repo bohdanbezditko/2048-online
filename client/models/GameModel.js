@@ -145,3 +145,7 @@ class GameModel {
         return true;
     }
 }
+
+if (typeof module !== "undefined") {
+    module.exports = GameModel;
+}

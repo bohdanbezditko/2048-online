@@ -122,3 +122,34 @@
 [2026-05-21T17:24:20.335Z] RESPONSE GET /leaderboard: [{"username":"вппвп","score":5268},{"username":"впа","score":1476}]
 [2026-05-21T17:24:22.734Z] REQUEST GET /leaderboard: {}
 [2026-05-21T17:24:22.734Z] RESPONSE GET /leaderboard: [{"username":"вппвп","score":5268},{"username":"впа","score":1476}]
+<<<<<<< HEAD
+=======
+[2026-05-23T10:22:51.538Z] REQUEST POST /register: {"username":"integration_user","password":"12345"}
+[2026-05-23T10:22:51.540Z] RESPONSE POST /register: {"success":true,"status":200,"message":"Користувача успішно зареєстровано"}
+[2026-05-23T10:22:51.549Z] REQUEST POST /login: {"username":"integration_user","password":"12345"}
+[2026-05-23T10:22:51.549Z] RESPONSE POST /login: {"success":true,"status":200,"message":"Авторизація успішна","bestScore":0,"token":"VnuWVU1jjZjOdTvKaDJBMIDNGwVpfXi4"}
+[2026-05-23T10:22:51.552Z] REQUEST POST /register: {"username":"score_user","password":"12345"}
+[2026-05-23T10:22:51.553Z] RESPONSE POST /register: {"success":true,"status":200,"message":"Користувача успішно зареєстровано"}
+[2026-05-23T10:22:51.555Z] REQUEST POST /login: {"username":"score_user","password":"12345"}
+[2026-05-23T10:22:51.555Z] RESPONSE POST /login: {"success":true,"status":200,"message":"Авторизація успішна","bestScore":0,"token":"bf254WipyE6oG27dT46wJZk9BGpHyNXV"}
+[2026-05-23T10:22:51.557Z] REQUEST POST /score/save: {"token":"bf254WipyE6oG27dT46wJZk9BGpHyNXV","score":512}
+[2026-05-23T10:22:51.558Z] RESPONSE POST /score/save: {"success":true,"status":200,"message":"Результат збережено"}
+[2026-05-23T10:22:51.560Z] REQUEST GET /leaderboard: {}
+[2026-05-23T10:22:51.561Z] RESPONSE GET /leaderboard: [{"username":"score_user","score":512}]
+[2026-05-23T10:22:51.564Z] REQUEST GET /game/start: {}
+[2026-05-23T10:22:51.564Z] RESPONSE GET /game/start: {"success":true,"board":[[2,0,0,0],[2,0,0,0],[0,0,0,0],[0,0,0,0]],"score":0}
+>>>>>>> master
+[2026-05-23T10:47:54.495Z] REQUEST POST /register: {"username":"integration_user","password":"12345"}
+[2026-05-23T10:47:54.496Z] RESPONSE POST /register: {"success":true,"status":200,"message":"Користувача успішно зареєстровано"}
+[2026-05-23T10:47:54.503Z] REQUEST POST /login: {"username":"integration_user","password":"12345"}
+[2026-05-23T10:47:54.503Z] RESPONSE POST /login: {"success":true,"status":200,"message":"Авторизація успішна","bestScore":0,"token":"TW6OHvQzmYe9npK6EQFJyWPKjY1TGJTF"}
+[2026-05-23T10:47:54.507Z] REQUEST POST /register: {"username":"score_user","password":"12345"}
+[2026-05-23T10:47:54.507Z] RESPONSE POST /register: {"success":true,"status":200,"message":"Користувача успішно зареєстровано"}
+[2026-05-23T10:47:54.509Z] REQUEST POST /login: {"username":"score_user","password":"12345"}
+[2026-05-23T10:47:54.509Z] RESPONSE POST /login: {"success":true,"status":200,"message":"Авторизація успішна","bestScore":0,"token":"VpbEW8nsC2EhLC3HmWOJCkjev5IY5Xu8"}
+[2026-05-23T10:47:54.511Z] REQUEST POST /score/save: {"token":"VpbEW8nsC2EhLC3HmWOJCkjev5IY5Xu8","score":512}
+[2026-05-23T10:47:54.512Z] RESPONSE POST /score/save: {"success":true,"status":200,"message":"Результат збережено"}
+[2026-05-23T10:47:54.515Z] REQUEST GET /leaderboard: {}
+[2026-05-23T10:47:54.515Z] RESPONSE GET /leaderboard: [{"username":"score_user","score":512}]
+[2026-05-23T10:47:54.518Z] REQUEST GET /game/start: {}
+[2026-05-23T10:47:54.518Z] RESPONSE GET /game/start: {"success":true,"board":[[0,0,0,0],[0,0,0,0],[0,2,0,0],[2,0,0,0]],"score":0}

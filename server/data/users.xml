@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<users>
-  <user>
-    <username>впа</username>
-    <password>1</password>
-    <bestScore>1476</bestScore>
-  </user>
-  <user>
-    <username>вппвп</username>
-    <password>1</password>
-    <bestScore>5268</bestScore>
-  </user>
-  <user>
-    <username>test</username>
-    <password>123</password>
-    <bestScore>0</bestScore>
-  </user>
-</users>
+<users></users>

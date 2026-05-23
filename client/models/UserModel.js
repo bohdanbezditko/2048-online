@@ -33,3 +33,7 @@ class UserModel {
         return this.currentUser !== null;
     }
 }
+
+if (typeof module !== "undefined") {
+    module.exports = UserModel;
+}
