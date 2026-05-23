@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>2048 Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+
+        <section id="loginScreen" class="screen">
+            <div class="card auth-card">
+                <h1>2048 Online</h1>
+                <p class="subtitle">Увійдіть або зареєструйтесь, щоб почати гру</p>
+
+                <input type="text" id="username" placeholder="Нікнейм">
+                <input type="password" id="password" placeholder="Пароль">
+
+                <button id="registerBtn">Зареєструватися</button>
+                <button id="loginBtn">Увійти</button>
+                <button id="demoLoginBtn" class="secondary-btn">Демо-вхід</button>
+
+                <p id="authMessage" class="message"></p>
+            </div>
+        </section>
+
+        <section id="menuScreen" class="screen hidden">
+            <div class="card menu-card">
+                <h1>2048 Online</h1>
+                <p class="subtitle">Вітаємо, <span id="menuUsername">гравець</span>!</p>
+
+                <button id="newGameBtn">Нова гра</button>
+                <button id="leaderboardBtn">Таблиця лідерів</button>
+                <button id="profileBtn">Профіль</button>
+                <button id="logoutBtn" class="secondary-btn">Вийти</button>
+            </div>
+        </section>
+
+        <section id="gameScreen" class="screen hidden">
+            <div class="card game-card">
+                <div class="game-header">
+                    <div>
+                        <h1>2048</h1>
+                        <p>Гравець: <span id="gameUsername">---</span></p>
+                    </div>
+
+                    <div class="score-box">
+                        <span>Рахунок</span>
+                        <strong id="score">0</strong>
+                    </div>
+                </div>
+
+                <div id="board" class="board"></div>
+
+                <p id="gameMessage" class="message"></p>
+
+                <div class="game-buttons">
+                    <button id="restartGameBtn">Нова гра</button>
+                    <button id="saveScoreBtn">Зберегти результат</button>
+                    <button id="backToMenuFromGameBtn" class="secondary-btn">В меню</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="leaderboardScreen" class="screen hidden">
+            <div class="card">
+                <h1>Таблиця лідерів</h1>
+                <p class="subtitle">Найкращі результати гравців</p>
+
+                <button id="refreshLeaderboardBtn">Оновити</button>
+
+                <ul id="leaderboard" class="leaderboard-list"></ul>
+
+                <button id="backToMenuFromLeaderboardBtn" class="secondary-btn">Назад у меню</button>
+            </div>
+        </section>
+
+        <section id="profileScreen" class="screen hidden">
+            <div class="card">
+                <h1>Профіль</h1>
+
+                <div class="profile-info">
+                    <p>Нікнейм: <strong id="profileUsername">---</strong></p>
+                    <p>Найкращий результат: <strong id="bestScore">0</strong></p>
+                </div>
+
+                <button id="backToMenuFromProfileBtn" class="secondary-btn">Назад у меню</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="models/UserModel.js"></script>
+    <script src="models/GameModel.js"></script>
+
+    <script src="views/ScreenView.js"></script>
+    <script src="views/AuthView.js"></script>
+    <script src="views/GameView.js"></script>
+    <script src="views/LeaderboardView.js"></script>
+    <script src="views/ProfileView.js"></script>
+
+    <script src="controllers/AuthController.js"></script>
+    <script src="controllers/GameController.js"></script>
+    <script src="controllers/NavigationController.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
